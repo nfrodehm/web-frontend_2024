@@ -1,0 +1,45 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFD700;
+    padding: 10px 15px;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* Bagian pesan */
+.messages {
+    margin: 20px;
+}
+
+.message {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}

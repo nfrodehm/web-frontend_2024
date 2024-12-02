@@ -1,0 +1,128 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFD700;
+    padding: 10px 20px;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+/* Sidebar (Menu Navigasi) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Disembunyikan di luar layar */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Jika sidebar aktif */
+.sidebar.active {
+    left: 0; /* Munculkan sidebar */
+}
+
+/* Overlay saat sidebar aktif */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+/* Dropdown filters */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.dropdown select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pesan */
+.messages {
+    margin: 20px;
+}
+
+.message {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sidebar.active {
+    left: 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat</title>
+    <link rel="stylesheet" href="/user css/riwayat.css">
+</head>
+<body>
+    <div class="header">
+        <div class="hamburger">
+            <span>&#9776;</span>
+        </div>
+        <div class="title">Hi, Mahasiswa</div>
+        <div class="logo">
+            <img src="/logo/Universitas-Khairun-Logo.png" alt="Logo">
+        </div>
+    </div>
+
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="/user/dashboard.html">Beranda</a></li>
+            <li><a href="/user/form.html">Pelayanan Surat</a></li>
+            <li><a href="/user/dokumen.html" onclick="openDokumen()">Pengajuan Dokumen</a></li>
+            <li><a href="/user/riwayat.html">Riwayat</a></li>
+            <li><a href="/user/pesan.html">Pesan</a></li>
+            <li><a href="/user/login.html" onclick="login()">logout</a></li>
+        </ul>
+    </nav>
+    <div class="filters">
+        <div class="dropdown">
+            <label for="bulan">Bulan</label>
+            <select id="bulan">
+                <option value="jan">Januari</option>
+                <option value="feb">Februari</option>
+                <option value="mar">Maret</option>
+                <option value="apr">April</option>
+                <option value="mei">Mei</option>
+                <option value="jun">Juni</option>
+                <option value="jul">Juli</option>
+                <option value="aug">Agustus</option>
+                <option value="sep">September</option>
+                <option value="oct">Oktober</option>
+                <option value="nov">November</option>
+                <option value="dec">Desember</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <label for="tahun">Tahun</label>
+            <select id="tahun">
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+        </div>
+    </div>
+    <div class="messages">
+        <div class="message">Pesan</div>
+        <div class="message">Pesan</div>
+    </div>
+    <script src="/user js/riwayat.js"></script>
+</body>
+</html>

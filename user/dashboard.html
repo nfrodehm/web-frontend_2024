@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Universitas Khairun</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/user css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="hamburger" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h3>Hi, Mahasiswa</h3>
+            <div class="logo">
+                <img src="/logo/Universitas-Khairun-Logo.png" alt="Logo Universitas">
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="/user/dashboard.html" onclick="showPage('home')">Beranda</a></li>
+                <li><a href="/user/form.html" onclick="showPage('pelayanan')">Pelayanan Surat</a></li>
+                <li><a href="/user/dokumen.html" onclick="showPage('pengajuan')">Pengajuan Dokumen</a></li>
+                <li><a href="/user/riwayat.html" onclick="showPage('riwayat')">Riwayat</a></li>
+                <li><a href="/user/pesan.html" onclick="showPage('pesan')">Pesan</a></li>
+                <li><a href="/user/login.html" onclick="login()">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content" id="content">
+            <h1>Selamat datang di</h1>
+            <h2>LAYANAN SURAT DAN PENGAJUAN DOKUMEN</h2>
+            <h2>UNIVERSITAS KHAIRUN</h2>
+        </main>
+    </div>
+    <script src="/user js/script.js"></script>
+</body>
+</html>

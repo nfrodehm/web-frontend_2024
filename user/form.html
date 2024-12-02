@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kerja Praktek / Kubermas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/user css/form.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="hamburger" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h3>Hi, Mahasiswa</h3>
+            <div class="logo">
+                <img src="/logo/Universitas-Khairun-Logo.png" alt="Logo Universitas">
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="/user/dashboard.html">Beranda</a></li>
+                <li><a href="/user/form.html">Pelayanan Surat</a></li>
+                <li><a href="/user/dokumen.html">Pengajuan Dokumen</a></li>
+                <li><a href="/user/riwayat.html">Riwayat</a></li>
+                <li><a href="/user/pesan.html">Pesan</a></li>
+                <li><a href="/user/login.html" onclick="login()">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content" id="content">
+            <div class="buttons" id="selection">
+                <button onclick="selectOption('Pengajuan UKT')">Pengajuan UKT</button>
+                <button onclick="selectOption('Pengambilan Data')">Pengambilan Data</button>
+            </div>
+
+            <!-- Form Section -->
+            <div class="form-section" id="form-section" style="display: none;">
+                <h2 id="form-title"></h2>
+                <form id="user-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap:</label>
+                        <textarea id="name" name="name"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="npm">NPM:</label>
+                        <textarea id="npm" name="npm"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="faculty">Fakultas/Prodi:</label>
+                        <textarea id="faculty" name="faculty"></textarea>
+                    </div>
+                    <button type="button" onclick="submitForm()">SUBMIT</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="/user js/form.js"></script>
+</body>
+</html>

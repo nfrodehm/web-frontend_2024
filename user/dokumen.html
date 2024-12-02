@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Dokumen</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/user css/dokumen.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="hamburger" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h3>Hi, Mahasiswa</h3>
+            <div class="logo">
+                <img src="/logo/Universitas-Khairun-Logo.png" alt="Logo Universitas">
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="/user/dashboard.html">Beranda</a></li>
+                <li><a href="/user/form.html">Pelayanan Surat</a></li>
+                <li><a href="/user/dokumen.html" onclick="openDokumen()">Pengajuan Dokumen</a></li>
+                <li><a href="/user/riwayat.html">Riwayat</a></li>
+                <li><a href="/user/pesan.html">Pesan</a></li>
+                <li><a href="/user/login.html" onclick="login()">logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content" id="content">
+            <!-- Form Section -->
+            <div class="dokumen-section">
+                <h2>Persyaratan Pengiriman:</h2>
+                <ul>
+                    <li>File maks 10MB</li>
+                    <li>Pastikan semua dokumen lengkap</li>
+                    <li>Dokumen harus terdiri dari Kartu Keluarga (KK), Akta Kelahiran, KRS, dan KHS</li>
+                </ul>
+                <form id="dokumen-form">
+                    <label for="upload">Upload File:</label>
+                    <input type="file" id="upload" accept=".zip, .rar">
+                    <p>Keterangan: type file: .zip, .rar</p>
+                    <button type="button" onclick="submitDokumen()">SUBMIT</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="/user js/dokumen.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    background-color: #ffed50;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.judul h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.paket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.login-container {
+    background-color: #fff59d;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 380px;
+    height: 380px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: -41px; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.logo img {
+    width: 105px;
+    height: 106px;
+}
+
+.login-container input {
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.login-container button {
+    background-color: #ffeb3b;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #fdd835;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Mahasiswa</title>
+    <link rel="stylesheet" href="/css admin/riwayat.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li id="history">Riwayat</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Hi, Mahasiswa</h1>
+        </header>
+        <div class="filters">
+            <select id="bulan">
+                <option value="" disabled selected>Bulan</option>
+                <option value="januari">Januari</option>
+                <option value="februari">Februari</option>
+                <option value="maret">Maret</option>
+                <!-- Tambahkan bulan lainnya -->
+            </select>
+            <select id="tahun">
+                <option value="" disabled selected>Tahun</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <!-- Tambahkan tahun lainnya -->
+            </select>
+        </div>
+        <div class="messages">
+            <div class="message">Pesan</div>
+            <div class="message">Pesan</div>
+        </div>
+    </div>
+    <script src="riwayat.js"></script>
+</body>
+</html>

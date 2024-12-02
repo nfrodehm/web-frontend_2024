@@ -1,0 +1,146 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* Topbar styles */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFD700;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topbar .hamburger {
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+.topbar .logo img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #FFD700;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50px; /* Adjusted for topbar height */
+    left: -250px; /* Hidden initially */
+    height: calc(100% - 50px);
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #333;
+}
+
+/* Main content styles */
+.content {
+    flex: 1;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    height: 100%;
+}
+
+/* Dokumen Section */
+.dokumen-section {
+    text-align: left;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.dokumen-section h2 {
+    margin-bottom: 10px;
+}
+
+.dokumen-section ul {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.dokumen-section ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="file"] {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 14px;
+    display: block;
+}
+
+form p {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form button:hover {
+    background-color: #d0d0d0;
+}
+
+/* Sidebar Active State */
+.sidebar.active {
+    left: 0;
+}
